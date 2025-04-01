@@ -19,7 +19,7 @@ The model considers multiple factors that influence student performance, includi
 - **Class Participation**
 - **Subject Difficulty**
 
-The parameters are loaded from `college_parameters.json` and adjusted based on user input.
+The parameters are loaded from `subjectdata.json` and adjusted based on user input.
 
 ### 2. **Normalization & Weighting**
 To ensure consistency, all parameters are normalized on a scale from 0 to 100. Weights are assigned to different parameters to calculate a final performance score:
@@ -40,7 +40,7 @@ Matplotlib is used to visualize:
 
 ### 5. **User Interaction & Data Handling**
 - Users can modify parameters through the GUI.
-- Updated values are stored in `college_parameters.json`.
+- Updated values are stored in `subjectdata.json`.
 - File handling ensures that data is persistently stored and retrieved.
 
 ## Installation & Usage
@@ -58,9 +58,9 @@ python main.py
 
 ## File Structure
 ```
-|-- main.py                  # Main application script
-|-- college_parameters.json   # Stores subject-related parameters
-|-- README.md                 # Documentation
+|-- main.py                 
+|-- README.md                 
+|-- subjectdata.json          
 ```
 
 ## Future Enhancements
@@ -68,6 +68,4 @@ python main.py
 - **Advanced Statistical Analysis:** Incorporate more complex regression models.
 - **User Authentication:** Save personalized performance data per student.
 
-## License
-This project is released under the MIT License.
 
