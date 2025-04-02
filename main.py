@@ -71,7 +71,7 @@ class SubjectPerformanceModel:
     def calculate_performance(self):
         """Calculate pass probability based on confirmed parameters"""
         weights = {
-            'preparedness': 0.3,
+            'preparedness': 0.2,
             'teaching': 0.3,
             'materials': 0.2,
             'participation': 0.15,
